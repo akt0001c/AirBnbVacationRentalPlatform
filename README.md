@@ -68,7 +68,11 @@ POST /api/items - create a new item
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
 
-- Node.js
-- Express.js
-- MongoDB
-- Other libraries/modules
+- Java
+- SpringBoot
+- Mysql
+- Hibernate
+- Spring Security
+- Lombok
+- Swagger
+
