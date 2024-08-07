@@ -1,0 +1,33 @@
+AirBnb Planning Doc
+
+Roles:  Host, User(Guest), Admin
+
+ Services:
+ 1. login or signup or logout services
+ 2. Booking services
+ 3. Property services
+ 4. Admin_Panel
+ 
+ EndPoints:
+    # Login_SignUp_logout service:
+	   1. POST: api/logIn   [Host,User,Admin]
+	   2. GET: api/logout   [Host,User,Admin]
+	   3. POST: api/signUp  [Host,User]
+	   4. POST: api/private/Register/Admin    [Admin]
+	   
+	# Booking service:
+		1. POST: api/add/booking    [User,Host,Admin]
+		2. GET:  api/bookings       [User,Host,Admin]
+		3. POST: api/requestToHostOrAdmin [User,Host,Admin]
+		3. PATCH: api/update/booking/bookingId [Host,Admin]
+		4. DELETE: api/booking/Id  [Admin]
+		
+	# Property service:
+		1. POST: api/add/property [Host,Admin]
+		2. GET : api/properties  [Host,Admin]
+		3. PATCH: api/update/property/id  [Admin]
+		4. DELETE: api/property/id  [Admin]
+		5. POST: api/requestToAdmin [User,Host,Admin]
+ 
+ 
+ 
